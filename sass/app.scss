@@ -1,0 +1,31 @@
+@import "./partials/code.scss";
+@import "./partials/button.scss";
+* {
+  color: #004175;
+  
+  &:not(pre, code, .token--class, input) {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  &:not(h1) {
+font-size: 13px;
+
+  }
+}
+input {
+  font-family: monospace;
+}
+.container {
+  margin-block-start:20px ;
+  display: flex;
+  gap: 20px;
+  .child {
+    flex: 1 1 100px;
+    // aspect-ratio: 1/1;
+    background-color: transparentize($color: orange, $amount: 0.6) !important;
+
+    max-width: 200px;
+    height: 100px;
+    padding: 20px;
+    
+  }
+}

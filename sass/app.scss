@@ -1,16 +1,22 @@
-@import "./partials/code.scss";
-@import "./partials/button.scss";
+@import url("https://use.typekit.net/pry0bti.css");
+
 * {
   color: #004175;
   box-sizing: border-box;
 
   &:not(pre, code, .token--class, input) {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "clone-rounded-latin", sans-serif;
+
   }
   &:not(h1) {
     font-size: 13px;
   }
 }
+body {
+  background-image: url("https://lidiakovac.it/_next/static/media/bg.5aec42e6.png")
+}
+@import "./partials/code";
+@import "./partials/button";
 input {
   font-family: monospace;
 }
